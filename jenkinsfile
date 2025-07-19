@@ -58,7 +58,7 @@ pipeline {
         stage('Push Docker Image to Amazon ECR') {
             steps {
                 script {
-                    withDockerRegistry([credentialsId: 'ecr:ap-south-1:ecr-upload-credential', url: "868651351276.dkr.ecr.ap-south-1.amazonaws.com/booking-ms"]) {
+                    withDockerRegistry([credentialsId: 'ecr:ap-south-1:ecr-upload-credential', url: "https://868651351276.dkr.ecr.ap-south-1.amazonaws.com/booking-ms"]) {
                         echo 'Tagging and Pushing Docker Image to ECR...'
                         sh '''
                             docker images
