@@ -11,7 +11,7 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT
 RUN useradd -m booking-ms
 
 # Copy your JAR file into the webapps directory
-COPY ./target/makemypicnic-0.0.1-SNAPSHOT*.jar /usr/local/tomcat/webapps/
+COPY ./target/booking-ms-v1.1*.war /usr/local/tomcat/webapps/
 
 # Expose the default Tomcat port
 EXPOSE 8080
