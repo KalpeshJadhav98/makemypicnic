@@ -29,6 +29,13 @@ pipeline {
                 echo 'WAR Artifact Created Successfully!'
             }
         }
+        stage('Print java version'){
+           steps {
+           echo 'creating WAR artifact'
+           sh 'java --version'
+           echo 'WAR artifact created successfull'
+           }
+        }
 
     }
 }
