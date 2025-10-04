@@ -36,6 +36,5 @@ pipeline {
            echo 'WAR artifact created successfull'
            }
         }
-
     }
 }
